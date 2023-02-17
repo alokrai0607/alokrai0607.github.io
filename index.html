@@ -5,204 +5,346 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="./Style.css">
-  <script src="https://kit.fontawesome.com/5ec94a7285.js" crossorigin="anonymous"></script>
+  <title>Portfolio website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
+    integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <div id="Header">
+
+  <!-- ------------------HOME SECTION START------------------------ -->
+
+
+  <div id="header">
     <div class="container">
-      <nav id="nav-menu">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmg6VbQr7k4bE8m1sGjODK19nEZn-UKVChBg&usqp=CAU"
-          class="logo" alt="Logo">
-        <ul>
-          <li id="home"><a href="#">Home</a></li>
-          <li id="about" class="about section"><a href="#">About</a></li>
-          <li id="skills"><a href="#">Skills</a></li>
-          <li id="projects"><a href="#">Projects</a></li>
-          <li id="contact"><a href="#">Contact</a></li>
+      <nav id="nav-menu" class="black">
+        <img src="./Images/logo.avif" alt="" class="logo home-img">
+        <h1 style="color: #11df1f;">Alok Kumar Rai</h1>
+
+        <ul id="sidemenu">
+          <li><a class="nav-link home" href="#home">HOME</a></li>
+
+          <li><a class="nav-link about" href="#about">ABOUT</a></li>
+          <li><a class="nav-link skills" href="#skills">SKILLS</a>
+          </li>
+          <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
+          <li><a href="#githubs">GITHUB</a></li>
+          <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
+
+          <li><a id="resume-button-1"
+            href="https://drive.google.com/file/d/1SLYnxt4GVHtiakFZbYaVF1paGgIbXn4T/view"
+               download=""
+              target="_blank">RESUME</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>
 
-      <div class="header-text">
-        <p>Java Backend Developer</p>
-        <h1>Hi , I'm <span>Alok</span><br> From Ghazipur Uttar Pradesh.</h1>
+      <div id="home" class="header-text">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-2">
+              <h1>Hi,I'm <span> Alok</span> Kumar rai </h1>
+              <p>A Java Backend Developer with a specialization in Java,Spring Boot <br />Excellent Teamwork ,
+                self-motivated and curious, with a keen interest in building user-centric products.
+              </p>
 
+
+
+              <a id="resume-button-2"
+                href="https://drive.google.com/file/d/1SLYnxt4GVHtiakFZbYaVF1paGgIbXn4T/view"
+                download="">RESUME</a>
+
+
+            </div>
+            <div class="about-col-1 imk">
+              <img src="./Images/developer image.jpg" alt="" width="350vw" height="450vh">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <!-- //***********************************About Section******************************************************// -->
-  <div id="nav-link-about">
+  <!-- ***********************About*********************** -->
+  <div id="about" class="about section">
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img id="img" src="./Images/Alok.pic.jpg">
+          <img src="./Images/Alok.pic.jpg" alt="">
         </div>
-
         <div class="about-col-2">
-          <h1 class="SubTitle">About Me</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit molestiae a reprehenderit. Repellat
-            minus magni fugiat obcaecati accusamus, nobis possimus doloremque ut, nam totam, nulla praesentium culpa
-            fugit voluptas error?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit molestiae a
-            reprehenderit. Repellat minus magni fugiat obcaecati accusamus, nobis possimus doloremque ut, nam totam,
-            nulla praesentium culpa fugit voluptas error?Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Suscipit molestiae a reprehenderit. Repellat minus magni fugiat obcaecati accusamus, nobis possimus
-            doloremque ut, nam totam, nulla praesentium culpa fugit voluptas error?Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Suscipit molestiae a reprehenderit. Repellat minus magni fugiat obcaecati
-            accusamus, </p>
+          <h1 class="sub-title">About Me</h1>
+          <h1 id="user-detail-name"></h1>
+          <h2 id="user-detail-intro">
+            <!-- HTML, CSS, JAVASCRIPT,JAVA,SPRING BOOT ,HIBERNATE,MAVEN,MYSQL -->
 
-          <div class="tab-title">
-            <p class="tab-links nav-link-skills" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links nav-link-educations" onclick="opentab('education')">Education</p>
-            <p class="tab-links nav-link-projects" onclick="opentab('professionalexp')">Professional Experience</p>
-          </div>
+          </h2>
+          <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis animi dolor similique illum commodi
+            obcaecati earum, iure vero explicabo nobis quis eveniet provident quaerat, iusto numquam fugit pariatur
+            fugiat aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis animi dolor similique
+            illum commodi obcaecati earum, iure vero explicabo nobis quis eveniet provident quaerat, iusto numquam fugit
+            pariatur fugiat aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis animi dolor
+            similique illum commodi obcaecati earum, iure vero explicabo nobis quis eveniet provident quaerat, iusto
+            numquam fugit pariatur fugiat aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+            animi dolor similique illum commodi obcaecati earum, iure vero explicabo nobis quis eveniet provident
+            quaerat, iusto numquam fugit pariatur fugiat aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Perferendis animi dolor similique illum commodi obcaecati earum, iure vero explicabo nobis quis
+            eveniet provident quaerat, iusto numquam fugit pariatur fugiat aperiam.Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Perferendis animi dolor similique illum commodi obcaecati earum, iure vero
+            explicabo nobis quis eveniet provident quaerat, iusto numquam fugit pariatur fugiat aperiam.Lorem ipsum
+            dolor sit amet consectetur, adipisicing elit. Perferendis animi dolor similique illum commodi obcaecati
+            earum, iure vero explicabo nobis quis eveniet provident quaerat, iusto numquam fugit pariatur fugiat
+            aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis animi dolor similique illum
+            commodi obcaecati earum, iure vero explicabo nobis quis eveniet provident quaerat, iusto numquam fugit
+            pariatur fugiat aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis animi dolor
+            similique illum commodi obcaecati earum, iure vero explicabo nobis quis eveniet provident quaerat, iusto
+            numquam fugit pariatur fugiat aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+            animi dolor similique illum commodi obcaecati earum, iure vero explicabo nobis quis eveniet provident
+            quaerat, iusto numquam fugit pariatur fugiat aperiam.
 
-          <div class="tab-containts nav-link-skill" id="skills">
-            <ul>
-              <li><span>UI/UX Developer</span><br>Desigening Web App Interfaces</li>
-              <li><span>Web Developer</span><br>Web App Development</li>
-              <li><span>Backend API Developer</span><br>Web Backend Development</li>
-            </ul>
-          </div>
-
-          <div class="tab-containts" id="education">
-            <ul>
-              <li><span>2022</span><br>Full Stack Web Development Traning From Masai School Bangluru</li>
-              <li><span>2017</span><br>M.com From VBSPU Jaunpur UP.</li>
-              <li><span>2014</span><br>B.com From VBSPU Jaunpur UP.</li>
-              <li><span>2011</span><br>Higher Secondary Education From UP Board</li>
-            </ul>
-          </div>
-
-          <div class="tab-containts" id="professionalexp">
-            <ul>
-              <li><span>2019 - 2021</span><br>Sr. Accountant, Anand Foods Pvt Ltd</li>
-              <li><span>2016 - 2019</span><br>Junior Accountant, Sukhbir Agro Energy Ltd.</li>
-            </ul>
-          </div>
+          </h2>
 
         </div>
+
       </div>
     </div>
   </div>
 
-  <!-- //*************************************Services****************************************************************// -->
+  <!-- -------------------------------------Skills------------------------------- -->
 
-  <div id="nav-link-projects">
+
+  <div id="skills">
+    <div class="container skills-card">
+      <h1 class="sub-title">Tech skills</h1>
+      <div class="skills-list">
+        <div class="skill">
+          <img class="skills-card-img" src="./images/htmlpic.avif" alt="">
+          <h5 class="skills-card-name">HTML</h5>
+        </div>
+        <div class="skill">
+          <img class="skills-card-img" src="./Images/css.image.avif" alt="">
+          <h5 class="skills-card-name">CSS</h5>
+        </div>
+        <div class="skill">
+          <img class="skills-card-img" src="./images/javascriptimg.jpg" alt="">
+          <h5 class="skills-card-name">JavaScript</h5>
+        </div>
+        
+        <div class="skill">
+          <img src="./images/JAVA.image.png" alt="">
+          <h5 class="skills-card-name">Java</h5>
+        </div>
+        <div class="skill">
+          <img class="skills-card-img" src="./Images/MYSQL.image.avif" alt="">
+          <h5 class="skills-card-name">MySql</h5>
+        </div>
+        <div class="skill">
+          <img class="skills-card-img" src="./Images/maven.image.jfif" alt="">
+          <h5 class="skills-card-name">Maven</h5>
+        </div>
+
+        <div class="skill">
+          <img class="skills-card-img"
+            src="./images/Spring.jpg"
+            alt="">
+          <h5 class="skills-card-name">Spring</h5>
+        </div>
+
+        <div class="skill">
+
+          <img class="skills-card-img" src="./images/spring-boot.png" alt="">
+          <h5 class="skills-card-name">Spring Boot</h5>
+        </div>
+
+        <div class="skill">
+          <img class="skills-card-img" src="./Images/hibernet.png"
+            alt="">
+          <h5 class="skills-card-name">Hibernate</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- -----------------------------projects section----------------------------- -->
+
+
+
+  <div id="projects">
     <div class="container">
-      <h1 class="SubTitle">My Projects</h1>
-      <div class="project-List">
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit magnam voluptatibus nisi, ducimus minima,
-            velit placeat ipsam sit blanditiis nobis perspiciatis eos error possimus soluta repellat non consectetur
-            fugiat quam!</p>
-          <a href="#">See More</a>
+      <h1 class="sub-title">My Projects</h1>
+      <div class="project-list">
+        <div class="project project-card">
+          <img src="./Images/Alok.pic.jpg" alt="">
+          <div class="layer">
+
+            <h2 class="project-title"> Rodan+Fields</h2>
+            <h3 class="project-tech-stack">Use TechStack (Html+CSS+JavaScript) Only </h3>
+            <p class="project-description">This a E-commerce website who provides totaly Medicated Beauty Products to our customers .</p>
+            <a class="project-github-link" href="https://github.com/alokrai0607/-honorable-lace-4969" target="_blank"><i
+                class="fa-brands fa-github"></i>Github</a>
+            <a class="project-deployed-link" href="https://bespoke-otter-363d82.netlify.app/" target="_blank"><i
+                class="fa-solid fa-link"></i>See Website Here</a>
+          </div>
+        </div>
+        <div class="project project-card">
+          <img src="./images/Alok.pic.jpg" alt="">
+          <div class="layer">
+
+            <h2 class="project-title"> E-Mart</h2>
+            <h3 class="project-tech-stack">Use TechStack (Html+CSS+JavaScript) Only </h3>
+            <p class="project-description">This is a E-commarce Website Who provides Cloths Shoes and Acessoseries easily from outside from India.</p>
+            <a class="project-github-link" href="https://github.com/alokrai0607/-embarrassed-pig-3561" target="_blank"><i
+                class="fa-brands fa-github"></i>Github</a>
+            <a class="project-deployed-link" href="https://sparkling-macaron-85cc95.netlify.app/" target="_blank"><i
+                class="fa-solid fa-link"></i>See Website Here</a>
+          </div>
         </div>
 
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>E-Mart</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit magnam voluptatibus nisi, ducimus minima,
-            velit placeat ipsam sit blanditiis nobis perspiciatis eos error possimus soluta repellat non consectetur
-            fugiat quam!</p>
-          <a href="#">See More</a>
-        </div>
+        <div class="project project-card">
+          <img src="./images/Alok.pic.jpg" alt="">
+          <div class="layer">
 
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>Bus Reservation System</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit magnam voluptatibus nisi, ducimus minima,
-            velit placeat ipsam sit blanditiis nobis perspiciatis eos error possimus soluta repellat non consectetur
-            fugiat quam!</p>
-          <a href="#">See More</a>
+            <h2 class="project-title"> E-Mart</h2>
+            <h3 class="project-tech-stack">Use TechStack (Html+CSS+JavaScript) Only </h3>
+            <p class="project-description">This is a E-commarce Website Who provides Cloths Shoes and Acessoseries easily from outside from India.</p>
+            <a class="project-github-link" href="https://github.com/alokrai0607/-embarrassed-pig-3561" target="_blank"><i
+                class="fa-brands fa-github"></i>Github</a>
+            <a class="project-deployed-link" href="https://sparkling-macaron-85cc95.netlify.app/" target="_blank"><i
+                class="fa-solid fa-link"></i>See Website Here</a>
+          </div>
+        </div>
+        <div class="project project-card">
+          <img src="./images/Alok.pic.jpg" alt="">
+          <div class="layer">
+
+            <h2 class="project-title"> E-Mart</h2>
+            <h3 class="project-tech-stack">Use TechStack (Html+CSS+JavaScript) Only </h3>
+            <p class="project-description">This is a E-commarce Website Who provides Cloths Shoes and Acessoseries easily from outside from India.</p>
+            <a class="project-github-link" href="https://github.com/alokrai0607/-embarrassed-pig-3561" target="_blank"><i
+                class="fa-brands fa-github"></i>Github</a>
+            <a class="project-deployed-link" href="https://sparkling-macaron-85cc95.netlify.app/" target="_blank"><i
+                class="fa-solid fa-link"></i>See Website Here</a>
+          </div>
+        </div>
         </div>
 
       </div>
     </div>
+
   </div>
 
-  <!-- *********************************************** My Work *************************************************** -->
+  <!-- ---------------------Github section-------------------------- -->
 
-  <div id="portfolio">
-    <div class="container">
-      <h1 class="SubTitle">My Work</h1>
-      <div class="work-List">
-        <div class="work">
-          <img id="dev" src="./Images/Web Development png.webp" alt="WebDev">
-          <div class="layer">
-            <h3>Web Development Traning</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quam autem accusantium nostrum dolore
-              veniam, dolores eveniet iusto ducimus cupiditate consequatur </p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
+  <div id="githubs">
+    <div class="container react-activity-calendar">
+      <h1 class="sub-title">GitHub React-Activity-Calendar</h1>
+      <div class="github-list">
+        <div class="github">
+          <img id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=alokrai0607&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+            alt="streakstat" />
+
         </div>
-        <div class="work">
-          <img id="dev" src="./Images/Financial 01.jpg.crdownload" alt="Acccounts01">
-          <div class="layer">
-            <h3>Work as Sr. Accountant</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quam autem accusantium nostrum dolore
-              veniam, dolores eveniet iusto ducimus cupiditate consequatur </p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
+        <div class="github" id="tops">
+          <img id="github-top-langs"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=alokrai0607&theme=outrun"
+            alt="top_languages" />
         </div>
-        <div class="work">
-          <img id="dev" src="./Images/Account01fsa01.jfif" alt="Acccounts02">
-          <div class="layer">
-            <h3>Work as Jr. Accountant</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quam autem accusantium nostrum dolore
-              veniam, dolores eveniet iusto ducimus cupiditate consequatur </p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
+
+        <div class="github">
+          <img id="github-stats-card"
+            src="https://github-readme-stats.vercel.app/api?username=alokrai0607&show_icons=true&theme=default&count_private=true" alt="stat-card" />
+
         </div>
+
+
       </div>
-
-      <a href="#" class="btn">See More</a>
     </div>
+
   </div>
-  <!-- //**********************************************Contect************************************************// -->
-     
+
+  <!-- -----------------------contact-form section--------------------- -->
   <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
 
-      <div class="container">
-        <div class="row">
-          <div class="contect-left"> 
-              <h1 class="sub-title">Contect Me</h1>
-               <p><i class="fa-sharp fa-regular fa-paper-plane"></i>saelalok001@gmail.com</p>
-               <p><i class="fa-solid fa-phone-volume"></i>+91-7880667919</p>
-               <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=100041299964391"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://twitter.com/alokrai57720689"><i class="fa-brands fa-square-twitter"></i></a>
-                <a href="https://www.instagram.com/alokrai6794/"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/alok-rai-004b35142"><i class="fa-brands fa-linkedin"></i></a>
-               </div>
-               <a href="https://drive.google.com/file/d/1SLYnxt4GVHtiakFZbYaVF1paGgIbXn4T/view?usp=sharing" download class="btn btn2"  >Resume</a>
+          <h1 class="sub-title">Contact me</h1>
+          
+          <a id="contact-phone" href="#">Contect here<i class="fa-solid fa-phone"></i></a>
+          <a id="contact-email" href="mailto:vivekchaudhary538@gmail.com">Email<i class="fa-solid fa-envelope"></i></a>
+          <section id="resume">
+            <a id="resume-link-1" href="https://drive.google.com/file/d/1SLYnxt4GVHtiakFZbYaVF1paGgIbXn4T/view" download="">Resume</a>
+          
+          </section>
+
+          <div class="social-icons">
+           
+            <a id="contact-github" href="https://github.com/alokrai0607" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
+            <a id="contact-linkedin" href="https://www.linkedin.com/in/alok-rai-004b35142/" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></a>
           </div>
-          <div class="contect-right">
-                <form>
-                  <input type="text" name="Name" placeholder="Write your Name here" required>
-                  <input type="email" name="email" placeholder="Write your email id here" required>
-                  <textarea type="Message" row="6" placeholder="Put your Message here"></textarea>
-                  <button type="submit" class="btn btn2">Submit</button>
 
-                </form>
+        </div>
+        <div class="contact-right">
+          <form action="mailto:saelalok001@gmail.com">
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="your message"></textarea>
+            <button type="submit" class="btn btn2">submit</button>
+          </form>
 
-          </div>
+
         </div>
       </div>
-          
-      <div class="copyright">
-        <p>@Made by alok</p>
-      </div>
+    </div>
 
   </div>
 
+  <div class="copyright">
+    <p> Made<i class="fa-solid fa-heart"></i> by Alok </p>
+  </div>
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemeu.style.right = "0";
+
+    }
+    function closemenu() {
+      sidemeu.style.right = "-200px";
+
+    }
+  </script>
 
 
-
-  <script src="./index.js"> </script>
 
 </body>
 
+
 </html>
+
+
+<script>
+  document.getElementById('resume-button-1').addEventListener("click", () => {
+    console.log("OPENinig.....")
+    window.open("https://drive.google.com/file/d/1SLYnxt4GVHtiakFZbYaVF1paGgIbXn4T/view");
+  })
+
+  document.getElementById('resume-link-1').addEventListener("click", () => {
+    console.log("OPENinig.....")
+    window.open("https://drive.google.com/file/d/1SLYnxt4GVHtiakFZbYaVF1paGgIbXn4T/view", "_blank");
+  })
+
+  document.getElementById('resume-button-2').addEventListener("click", () => {
+    console.log("OPENinig.....")
+    window.open("https://drive.google.com/file/d/1SLYnxt4GVHtiakFZbYaVF1paGgIbXn4T/view", "_blank");
+  })
+</script>

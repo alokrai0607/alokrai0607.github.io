@@ -5,352 +5,351 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio website</title>
-  <link rel="stylesheet" href="./Style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
-    integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>PortFix</title>
+  <!-- box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+  <!-- Header Section -->
+  <header class="header">
+    <a href="#" class="logo"><i style="color: red;" class='bx bxs-hand-right'></i> Portfolio</a>
 
-  <!-- ------------------HOME SECTION START------------------------ -->
+    <i class='bx bx-menu' id="menu-icon"></i>
 
-   
-  <div id="header">
-    <div class="container">
-      <nav id="nav-menu" class="black">
-        <img src="./Images/codelogo.png" alt="" class="logo home-img">
-        <h1 style="color: #11df1f;">Alok</h1>
-
-        <ul id="sidemenu">
-          <li><a class="nav-link home button-85" href="#home" role="button">HOME</a></li>
-
-          <li><a class="nav-link about button-85" href="#about" role="button">ABOUT</a></li>
-          <li><a class="nav-link skills button-85" href="#skills" role="button">SKILLS</a>
-          </li>
-          <li><a class="nav-link projects button-85" href="#projects" role="button">PROJECTS</a></li>
-          <li><a class="button-85" href="#githubs ">GITHUB</a></li>
-          <li><a class="nav-link contact button-85" href="#contact" role="button">CONTACT</a></li>
-
-          <li><a id="resume-button-1" class="button-85 nav-link resume" 
-              href="./Images/Alok_Rai_Resume.pdf" download=""
-              target="_blank">RESUME</a></li>
-          <i class="fas fa-times" onclick="closemenu()"></i>
-        </ul>
-        <i class="fas fa-bars" onclick="openmenu()"></i>
+    <nav  id="nav-menu" class="navbar">
+      <a href="#home" class="active nav-link home"><i class='bx bxs-home-heart' ></i>Home</a>
+      <a href="#about"><i class='bx bx-child nav-link about' ></i>About</a>
+      <a href="#services"><i class='bx bxs-shopping-bag nav-link projects' ></i>Projects</a>
+      <a href="#portfolio"><i class='bx bx-joystick-button nav-link skills'></i>Skill</a>
+      <a href="#contact"><i class='bx bx-mobile-alt nav-link contact' ></i>Contact</a>
+      <a href="./Images/Alok_Rai_Resume.pdf" download="Alok_Rai_Resume.pdf"><i class='bx bxs-file-doc nav-link resume' ></i>Resume</a>
       </nav>
+  </header>
 
-      <div id="home" class="header-text">
-        <div class="container">
-          <div class="row">
-            <div class="about-col-2">
-              <!-- <h1>Hi,I'm <span> Alok</span> Kumar rai </h1> -->
-              <h1>Who is this guy??</h1>
-              <br>
-              <p>Hi, i am  <span> Alok </span>(Java Backend Developer) from Masai School Banglore with good knowledge in JavaScript,Java, Spring ,Spring Boot <br />Excellent Teamwork ,
-                self-motivated and curious, with a keen interest in building user-centric products.
-              </p>
-              <a id="resume-button-2" class="button-85" role="button"
-                href="./Images/Alok_Rai_Resume.pdf" download="">RESUME</a>
+  <!-- home section design -->
 
-
-            </div>
-            <div class="about-col-1 imk">
-              <img src="./Images/developer image.jpg" alt="" width="550vw" height="520vh">
-            </div>
-          </div>
-        </div>
+  <section class="section" id="home">
+    <div class="home-content">
+      <h3>Hello It's Me</h3>
+      <h1 id="user-detail-name">Alok Rai</h1>
+      <h3>And I'm a <span class="multiple-text" >Java Backend Developer</span></h3>
+      <p id="user-detail-intro" > with a specialization in Spring Boot,My SQL database & Hibernate also.<br>Excellent teamwork, self-motivated and
+        curious, with a keen interest <br>in building user-centric products.
+        Let's build together something unique.</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=100041299964391"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/alokrai6794/"><i class='bx bxl-instagram'></i></a>
+        <a href="https://github.com/alokrai0607"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/alok-rai-004b35142"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://twitter.com/alokrai57720689"><i class='bx bxl-twitter'></i></a>
       </div>
+      <a href="./Images/Alok_Rai_Resume.pdf" download="" target="_blank" class="btn"> Download CV 
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </a>
     </div>
-  </div>
-  <!-- ***********************About*********************** -->
-  <div id="about" class="about section">
+       
+    <div class="home-img">
+      <img class="img" src="./Images/home.jpg" alt="">
+    </div>
+  </section>
 
-    <div class="container">
+  <!-- about section design -->
 
-      <div class="row">
-        <div class="about-col-1">
-          <img src="./Images/Alok.pic.jpg" alt="">
-        </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <h1 id="user-detail-name"></h1>
-          <h2 id="user-detail-intro">
-            <!-- HTML, CSS, JAVASCRIPT,JAVA,SPRING BOOT ,HIBERNATE,MAVEN,MYSQL -->
+  <section class="about_section" id="about">
+    <div class="about-img">
+      <img src="./Images/about.jpg" alt="">
+    </div>
 
-          </h2>
-          <h2>Aspiring Java Backend Developer enthusiastic to
-            learn and explore new technologies. 1200+ hours of
-            Coding experience and work on many Projects .
-            Solved more than 150+ data structure questions.
-            Strongly interested in obtaining a backend developer
-            position to create impactful and scalable products.
+    <div class="about-content">
+      <h2 class="heading">About<span>  Me</span></h2>
+      <h3>Java Backend Developer</h3>
+      <p> Hello , i am <span>Alok</span> and i belong from Varansi Uttar Pradesh. <br>I am 
+        a passionate JAVA Back-End Developer, Dedicated to <br>developing robust applications that
+        interact with the Backend <br>part of web applications. Extensive expertise in website architecture,<br>
+        design, and web design, and web API designs. Problem-solving mindset <br>with a goal to optimize
+        my application for better stability and speed. Love to work in a team.</p>
 
-          </h2>
-          <div class="about-col-2">
-            <h1 class="sub-title">Education</h1>
-            <h1 id="user-detail-name"></h1>
-            <h2 id="user-detail-intro">
-              <!-- HTML, CSS, JAVASCRIPT,JAVA,SPRING BOOT ,HIBERNATE,MAVEN,MYSQL -->
-  
-            </h2>
-            <h2>Aspiring Java Backend Developer enthusiastic to code </h2>
-  
-          </div>
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </section>
 
-        </div>
+  <!-- Services section design -->
+
+  <section class="services" id="services">
+    <h2 class="heading">My<span> Projects</span></h2>
+    <div class="services-container">
+
+      <div class="services-box">
+        <i class='bx bx-store'></i>
+        <h3>Rodan+Fields</h3>
+        <p>Rodan+Fields is a Beauty Product website who provides Medicated products as per highly recomended on Docters Suggession.
+          Because in our market many of harmful products are avilavle who is the direct reason for skin cancer type deseas. </p>
+        <a href="https://github.com/alokrai0607/-honorable-lace-4969" class="btn"><i class='bx bxl-github' ></i></a>
+        <a href="https://drive.google.com/file/d/1NQEn6iDf2hEej1ZppT8GaUFkmGzHj7Uz/view?usp=sharing" class="btn"><i class='bx bxs-video-recording' ></i></a>
+        <a href="https://bespoke-otter-363d82.netlify.app/" class="btn"><i class='bx bxl-netlify' ></i></a>
         
-
       </div>
+
+      <div class="services-box">
+        <i class='bx bxs-t-shirt'></i>
+        <h3>E-Mart</h3>
+        <p>E-mart is a e-commerce Websit who provides foregin cloths shose and Acessories to our coustomers Easyly .The main agenda of our website is to provide easly on respective amount. it provides many brands.</p>
+          <a href="https://github.com/alokrai0607/-embarrassed-pig-3561.git" class="btn"><i class='bx bxl-github' ></i></a>
+          <a href="https://drive.google.com/file/d/11_koTHAdc1sWHGmaMFZPLfgDPqq7i2Iy/view?usp=sharing" class="btn"><i class='bx bxs-video-recording' ></i></a>
+          <a href="https://sparkling-macaron-85cc95.netlify.app/" class="btn"><i class='bx bxl-netlify' ></i></a>
+          
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxs-pen'></i>
+        <h3>Student Management System</h3>
+        <p>Student management System is a console base project whoes manage student data easly it totly work like LMS. it completed by using Java+SQl+Spring tool suite Only. it is easy to access from both side</p>
+          <a href="https://github.com/alokrai0607/moaning-act-434" class="btn"><i class='bx bxl-github' ></i></a>
+          <a href="https://drive.google.com/file/d/1iIdLZccGGYRsuusu9bvhrbZAcDJkF6c7/view?usp=sharing" class="btn"><i class='bx bxs-video-recording' ></i></a>
+          <a href="https://github.com/alokrai0607/moaning-act-434" class="btn"><i class='bx bxl-netlify' ></i></a>
+          
+      </div>
+
     </div>
-  </div>
+  </section>
 
-  <!-- -------------------------------------Skills------------------------------- -->
+ 
+  <!-- Portfolio Section Design -->
 
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">My<span> Skill</span></h2>
+    <div class="portfolio-container">
 
-  <div id="skills">
-    <h1 class="sub-title">Tech skills</h1>
-    <div class="container skills-card">
-
-      <div class="skills-list">
-        <div class="skill">
-          <img class="skills-card-img" src="./images/htmlpic.avif" alt="">
-          <h5 class="skills-card-name button-85">HTML</h5>
-        </div>
-        <div class="skill">
-          <img class="skills-card-img" src="./Images/css.image.avif" alt="">
-          <h5 class="skills-card-name button-85">CSS</h5>
-        </div>
-        <div class="skill">
-          <img class="skills-card-img" src="./images/javascriptimg.jpg" alt="">
-          <h5 class="skills-card-name button-85">JavaScript</h5>
-        </div>
-
-        <div class="skill">
-          <img src="./images/JAVA.image.png" alt="">
-          <h5 class="skills-card-name button-85">Java</h5>
-        </div>
-        <div class="skill">
-          <img class="skills-card-img" src="./Images/MYSQL.image.avif" alt="">
-          <h5 class="skills-card-name button-85">MySql</h5>
-        </div>
-        <div class="skill">
-          <img class="skills-card-img" src="./Images/maven.image.jfif" alt="">
-          <h5 class="skills-card-name button-85 button-85">Maven</h5>
-        </div>
-
-        <div class="skill">
-          <img class="skills-card-img" src="./images/Spring.jpg" alt="">
-          <h5 class="skills-card-name button-85">Spring</h5>
-        </div>
-
-        <div class="skill">
-
-          <img class="skills-card-img" src="./images/spring-boot.png" alt="">
-          <h5 class="skills-card-name button-85">Spring Boot</h5>
-        </div>
-
-        <div class="skill">
-          <img class="skills-card-img" src="./Images/hibernet.png" alt="">
-          <h5 class="skills-card-name button-85">Hibernate</h5>
-        </div>
-        <div class="skill">
-          <img class="skills-card-img" src="./Images/aws.jpg" alt="">
-          <h5 class="skills-card-name button-85">AWS</h5>
+      <div class="skills-card portfolio-box">
+        <img class="skills-card-img" src="./Images/htmlpic.avif" alt="">
+        <div class="portfolio-layer">
+          <h4 class="skills-card-name">HTML</h4>
+          <p>HTML stands for Hyper Text Markup Language
+            HTML is the standard markup language for creating Web pages
+            HTML describes the structure of a Web page
+            HTML consists of a series of elements
+            HTML elements tell the browser how to display the content</p>
+          <a href="https://en.wikipedia.org/wiki/HTML"><i class='bx bx-link-external'></i></a> 
         </div>
       </div>
-    </div>
 
-  </div>
-
-
-  <!-- -----------------------------projects section----------------------------- -->
-
-
-
-  <div id="projects">
-    <h1 class="sub-title">My Projects</h1>
-    <div class="container">
-
-      <div class="project-list">
-        <div class="project project-card">
-          <img src="./Images/Alok.pic.jpg" alt="">
-          <div class="layer">
-
-            <h2 class="project-title"> Rodan+Fields</h2>
-            <h3 class="project-tech-stack">Use TechStack (Html+CSS+JavaScript) Only </h3>
-            <p class="project-description">This a E-commerce website who provides totaly Medicated Beauty Products to
-              our customers .</p>
-            <a class="project-github-link" href="https://github.com/alokrai0607/-honorable-lace-4969" target="_blank"><i
-                class="fa-brands fa-github"></i>Github</a>
-            <a class="project-deployed-link" href="https://bespoke-otter-363d82.netlify.app/" target="_blank"><i
-                class="fa-solid fa-link"></i>See Website Here</a>
-          </div>
+      <div class="skills-card portfolio-box">
+        <img class="skills-card-img" src="./Images/css.image.avif" alt="">
+        <div class="portfolio-layer">
+          <h4 class="skills-card-name">CSS</h4>
+          <p>CSS stands for Cascading Style Sheets
+            CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+            CSS saves a lot of work. It can control the layout of multiple web pages all at once
+            External stylesheets are stored in CSS files
+            </p>
+          <a href="https://en.wikipedia.org/wiki/CSS"><i class='bx bx-link-external'></i></a>
         </div>
-        <div class="project project-card">
-          <img src="./images/Alok.pic.jpg" alt="">
-          <div class="layer">
+      </div>
 
-            <h2 class="project-title"> E-Mart</h2>
-            <h3 class="project-tech-stack">Use TechStack (Html+CSS+JavaScript) Only </h3>
-            <p class="project-description">This is a E-commarce Website Who provides Cloths Shoes and Acessoseries
-              easily from outside from India.</p>
-            <a class="project-github-link" href="https://github.com/alokrai0607/-embarrassed-pig-3561"
-              target="_blank"><i class="fa-brands fa-github" ></i>Github</a>
-            <a class="project-deployed-link " href="https://sparkling-macaron-85cc95.netlify.app/" target="_blank"><i
-                class="fa-solid fa-link"></i>See Website Here</a>
-          </div>
+      <div class="skills-card portfolio-box">
+        <img class="skills-card-img" src="./Images/javascriptimg.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4 class="skills-card-name">JavaScript</h4>
+          <p>JavaScript is used by many developers , and the number is increasing day by day. JavaScript is one such programming language that has more than 1444231 libraries and increasing rapidly. It is preferred over any other programming language by most developers. </p>
+          <a href="https://en.wikipedia.org/wiki/JavaScript"><i class='bx bx-link-external'></i></a>
         </div>
+      </div>
 
-        <div class="project project-card">
-          <img src="./images/Alok.pic.jpg" alt="">
-          <div class="layer">
-
-            <h2 class="project-title"> E-Mart</h2>
-            <h3 class="project-tech-stack">Use TechStack (Html+CSS+JavaScript) Only </h3>
-            <p class="project-description">This is a E-commarce Website Who provides Cloths Shoes and Acessoseries
-              easily from outside from India.</p>
-            <a class="project-github-link" href="https://github.com/alokrai0607/-embarrassed-pig-3561"
-              target="_blank"><i class="fa-brands fa-github"></i>Github</a>
-            <a class="project-deployed-link" href="https://sparkling-macaron-85cc95.netlify.app/" target="_blank"><i
-                class="fa-solid fa-link"></i>See Website Here</a>
-          </div>
+      <div class="skills-card portfolio-box">
+        <img class="skills-card-img" src="./Images/java.png" alt="">
+        <div class="portfolio-layer">
+          <h4 class="skills-card-name">Java</h4>
+          <p>Java is a popular programming language, created in 1995.
+            It is owned by Oracle, and more than 3 billion devices run Java.
+            It is used for:
+            Mobile applications (specially Android apps)
+            Desktop applications
+            Web applications
+            Web servers and application servers
+            Games
+            Database connection
+            And much, much more!</p>
+          <a href="https://en.wikipedia.org/wiki/Java"><i class='bx bx-link-external'></i></a>
         </div>
-        <div class="project project-card">
-          <img src="./images/Alok.pic.jpg" alt="">
-          <div class="layer">
+      </div>
 
-            <h2 class="project-title"> E-Mart</h2>
-            <h3 class="project-tech-stack">Use TechStack (Html+CSS+JavaScript) Only </h3>
-            <p class="project-description">This is a E-commarce Website Who provides Cloths Shoes and Acessoseries
-              easily from outside from India.</p>
-            <a class="project-github-link" href="https://github.com/alokrai0607/-embarrassed-pig-3561"
-              target="_blank"><i class="fa-brands fa-github"></i>Github</a>
-            <a class="project-deployed-link" href="https://sparkling-macaron-85cc95.netlify.app/" target="_blank"><i
-                class="fa-solid fa-link"></i>See Website Here</a>
-          </div>
+      <div class="skills-card portfolio-box">
+        <img class="skills-card-img" src="./Images/Spring.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4 class="skills-card-name">Spring</h4>
+          <p>The Spring Framework (Spring) is an open-source application framework that provides infrastructure support for developing Java applications. One of the most popular Java Enterprise Edition (Java EE) frameworks, Spring helps developers create high performing applications using plain old Java objects (POJOs).</p>
+          <a href="https://en.wikipedia.org/wiki/Spring_Framework"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="skills-card portfolio-box">
+        <img class="skills-card-img" src="./Images/spring-boot.png" alt="">
+        <div class="portfolio-layer">
+          <h4 class="skills-card-name">Spring Boot</h4>
+          <p>Standalone applications—Spring Boot helps create apps that aren't tied to a specific platform and that can run locally on a device without an internet connection or other installed services to be functional. Embedded servers—Spring Boot allows you to embed servers such as Tomcat, Jetty, or Undertow directly.</p>
+          <a href="https://en.wikipedia.org/wiki/Springboot_in_java"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="skills-card portfolio-box">
+        <img class="skills-card-img" src="./Images/hibernet.png" alt="">
+        <div class="portfolio-layer">
+          <h4 class="skills-card-name">Hibernate</h4>
+          <p>Hibernate is an open source object relational mapping (ORM) tool that provides a framework to map object-oriented domain models to relational databases for web applications. Object relational mapping is based on the containerization of objects and the abstraction that provides that capacity.</p>
+          <a href="https://en.wikipedia.org/wiki/Hibernate_(framework)"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="skills-card portfolio-box">
+        <img class="skills-card-img" src="./Images/MYSQL.image.avif" alt="">
+        <div class="portfolio-layer">
+          <h4 class="skills-card-name">My SQL</h4>
+          <p>MySQL is a database management system.
+
+            It may be anything from a simple shopping list to a picture gallery or the vast amounts of information in a corporate network. To add, access, and process data stored in a computer database, you need a database management system such as MySQL Server.</p>
+          <a href="https://en.wikipedia.org/wiki/MySQL"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
 
     </div>
+  </section>
+
+  <div  class="github-content-wrapper">
+    <div class="calendar react-activity-calendar">
+      Loading stuff Loading the data just for you.
+    </div>
   </div>
 
-  </div>
-
-  <!-- ---------------------Github section-------------------------- -->
-
-  <div id="githubs">
-    <h1 class="sub-title">GitHub React-Activity-Calendar</h1>
-    <div class="container react-activity-calendar">
-
-      <div class="github-list" id="contibution">
-        <div class="github">
-          <img id="github-streak-stats"
-            src="https://github-readme-streak-stats.herokuapp.com/?user=alokrai0607&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
-            alt="streakstat" />
-
-        </div>
-        <div class="github" id="tops">
-          <img id="github-top-langs"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=alokrai0607&theme=outrun"
-            alt="top_languages" />
-        </div>
-
-        <div class="github" id="contibution">
-          <img id="github-stats-card"
-            src="https://github-readme-stats.vercel.app/api?username=alokrai0607&show_icons=true&theme=default&count_private=true"
-            alt="stat-card" />
-
-        </div>
-
-
+  <div class="github-content container">
+    <h1 class="sub-title">Github Stats</h1>
+    <p>
+      <img
+        id="github-top-langs"
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=alokrai0607"
+        alt="alokrai0607"
+      />
+    </p>
+    <p>
+      &nbsp;<img
+        id="github-stats-card"
+        src="https://github-readme-stats.vercel.app/api?username=alokrai0607"
+        alt="alokrai0607"
+      />
+    </p>
+    <p>
+      <img
+        id="github-streak-stats"
+        src="https://github-readme-streak-stats.herokuapp.com?user=alokrai0607"
+        alt="alokrai0607"
+      />
+    </p>
+    <div class="github-content-wrapper">
+      <div class="calendar react-activity-calendar">
+        Loading stuff Loading the data just for you.
       </div>
     </div>
-
   </div>
 
-  <!-- -----------------------contact-form section--------------------- -->
-  <div id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contact-left">
+             <!-- Contact Section Design -->
 
-          <h1 class="sub-title">Contact me</h1>
 
-          <a id="contact-phone" href="#">Contect here<i class="fa-solid fa-phone"></i></a>
-          <a id="contact-email" href="mailto:vivekchaudhary538@gmail.com">Email<i class="fa-solid fa-envelope"></i></a>
-          <section id="resume">
-            <a id="resume-link-1" href="https://drive.google.com/file/d/1SLYnxt4GVHtiakFZbYaVF1paGgIbXn4T/view"
-              download="">Resume</a>
+        <section class="contact_section" id="contact">
+             
+          <div class="contact-left">
+            <h1 class="sub-title">Contact</h1>
+            <p id="contact-email">
+              <i class="fa-solid fa-envelope"></i>ashish.tripathy39@gmail.com
+            </p>
+            <p id="contact-phone">
+              <i class="fa-solid fa-phone"></i>+91 7008064317
+            </p>
+            <div class="social-icons">
+              <a
+                id="contact-linkedin"
+                href="https://www.linkedin.com/in/ashish-tripathy-26150a239/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a id="contact-github" href="https://github.com/malonicester"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://twitter.com/malonic_ester"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
 
-          </section>
+            <h2 class="heading"> Contact <span>Me</span></h2>
+            <form action="#">
+  
+              <div class="input-box">
+  
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+  
+              </div>
+  
+              <div class="input-box">
+  
+                <input type="number" placeholder="Contact No">
+                <input type="text" placeholder="Email Subject">
+  
+              </div>
+  
+              <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+              <input type="submit" value="Send Message" class="btn">
+  
+            </form>
+        </section> 
+        
+        <!-- footer Design -->
 
-          <div class="social-icons">
-
-            <a id="contact-github" href="https://github.com/alokrai0607" target="_blank"><i
-                class="fa-brands fa-github"></i></a>
-            <a id="contact-linkedin" href="https://www.linkedin.com/in/alok-rai-004b35142/" target="_blank"><i
-                class="fa-brands fa-linkedin-in"></i></a>
+        <footer class="footer">
+          <div class="footer-text">
+            <p>Made By Java Developer @ Alok</p>
           </div>
 
+          <div class="footer-iconTop">
+               <a href="#home"><i class='bx bx-chevrons-up' ></i></a>
+          </div>
+        </footer>
 
-        </div>
-        <div class="contact-right">
-          <form action="mailto:saelalok001@gmail.com">
+             <!-- Scroll revail -->
+             <script src="https://unpkg.com/scrollreveal"></script>
 
-            <input type="text" name="Name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="your message"></textarea>
-            <button type="submit" class="btn btn2">submit</button>
-          </form>
+             <!-- typed.js -->
+
+             <script src="https://cdn.jsdeliver.net/npm/typed.js@2.0.12"></script>
 
 
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="copyright">
-    <p> Made<i class="fa-solid fa-heart"></i> by Alok </p>
-  </div>
-  <script>
-    var sidemeu = document.getElementById("sidemenu");
-    function openmenu() {
-      sidemeu.style.right = "0";
-
+  <!-- custom js -->
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <script> GitHubCalendar(
+    ".calendar",
+    "alokrai0607",
+    { responsive: true },
+    {
+      proxy(username) {
+        return fetch(`https://your-proxy.com/github?user=${username}`);
+      },
     }
-    function closemenu() {
-      sidemeu.style.right = "-200px";
-
-    }
-  </script>
-
-
-
+  )
+    .then((r) => r.text())
+    .catch((e) => console.log(e));</script>
+  <script src="js/script.js"></script>
 </body>
 
-
 </html>
-
-
-<script>
-  document.getElementById('resume-button-1').addEventListener("click", () => {
-    console.log("OPENinig.....")
-    window.open("https://drive.google.com/file/d/1SLYnxt4GVHtiakFZbYaVF1paGgIbXn4T/view");
-  })
-
-  document.getElementById('resume-link-1').addEventListener("click", () => {
-    console.log("OPENinig.....")
-    window.open("https://drive.google.com/file/d/1SLYnxt4GVHtiakFZbYaVF1paGgIbXn4T/view", "_blank");
-  })
-
-  document.getElementById('resume-button-2').addEventListener("click", () => {
-    console.log("OPENinig.....")
-    window.open("https://drive.google.com/file/d/1SLYnxt4GVHtiakFZbYaVF1paGgIbXn4T/view", "_blank");
-  })
-</script>

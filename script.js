@@ -61,3 +61,7 @@ window.onscroll = () =>{
         backDelay: 1000,
         loop: true
      });
+
+    //  GitHubCalendar(".calendar", "alokrai0607");
+    //  // or enable responsive functionality
+    //  GitHubCalendar(".calendar", "alokrai0607", { responsive: true });

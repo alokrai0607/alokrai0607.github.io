@@ -417,20 +417,20 @@ span {
 }
 
 /* Code for GithUB section */
-.github-content {
+/* .github-content {
   margin-top: 30px;
   padding-bottom: 40px;
-}
+} */
 /* .calendar.react-activity-calendar {
   width: 80%;
 }*/
-.github-content img {
-  /* display: block; */
-  margin-bottom: 20px;
-}
-.calendar.react-activity-calendar .contrib-column.table-column span {
+ /* .github-content img {
+   display: block;
+   margin-bottom: 20px;
+}  */
+/* .calendar.react-activity-calendar .contrib-column.table-column span {
   color: white;
-}
+} */
 
 /*****************************Footer**********************************/
 

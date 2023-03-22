@@ -45,7 +45,6 @@ body {
 
 .header.sticky {
   border-bottom: .1rem solid rgba(0, 0, 0, .2);
-
 }
 
 .logo {
@@ -82,7 +81,6 @@ select {
 .img {
   height: 60%;
   width: 60%;
-  /* margin-left: 40%; */
   margin-top: auto;
 
   border-radius: 10px;
@@ -417,10 +415,6 @@ span {
   color: #0ef;
   transform: scaleY(-5px);
 }
-
-/* .calendar.react-activity-calendar .contrib-column.table-column span {
-  color: white;
-} */
 
 /* Code for GithUB section */
 .github-content {

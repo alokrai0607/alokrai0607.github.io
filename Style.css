@@ -2,33 +2,6 @@
   overflow: hidden;
 }
 
-/* .topnav a{
-float: left;
-color:white;
-text-align: center;
-text-decoration: none;
-padding: 14px 16px;
-font-size: 25px;
-transition: all 0.5s; 
-overflow: hidden;
-} */
-/* .topnav a:hover{
-background-color: #ddd;
-color:rgb(241, 32, 105);
-} */
-/* #f{
-padding-top: 50px;
-}
-
-.topnav a.active{
-
-background-image: linear-gradient(to right, #00b09b, #96c93d); 
-color:white;
-}
-.topnav .icon{
-display: none;
-} */
-
 @media screen and (max-width:600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -101,7 +74,6 @@ body {
 
 body {
   width: 100%;
-  /* border: 1px solid red; */
   margin: 0px;
   padding: 0px;
 }
@@ -139,43 +111,7 @@ body {
   background-color: #333;
 }
 
-
-
-
-
 /**************************************** home Section **************************************/
-
-
-
-
-
-/* .header {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-padding: 2rem 9%;
-background: var(--bg-color);
-display: flex;
-justify-content: space-between;
-align-items: center;
-z-index: 100;
-}
-
-.header.sticky {
-border-bottom: .1rem solid rgba(0, 0, 0, .2);
-
-}
-
-.logo {
-font-size: 2.5rem;
-color: var(--text-color);
-font-weight: 600;
-cursor: default;
-} */
-
-
-
 
 .home-img {
   height: 10%;
@@ -224,27 +160,6 @@ h6 {
   }
 }
 
-/* .social-media a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 4rem;
-  height: 4rem;
-  background: transparent;
-  border: .2rem solid var(--main-color);
-  border-radius: 50%;
-  font-size: 2rem;
-  color: var(--main-color);
-  margin: 3rem 1.5rem 3rem 0;
-  transition: .5s ease;
-} */
-/* 
-.social-media a:hover {
-  background: var(--main-color);
-  color: var(--second-bg-color);
-  box-shadow: 0 0 1rem var(--main-color);
-} */
-
 #resume-button-2 {
   display: inline-block;
   padding: 1rem 2.8rem;
@@ -270,6 +185,7 @@ h6 {
 #about {
   margin: 50px;
   text-align: center;
+  height: 90vh;
 }
 
 h2 {
@@ -277,10 +193,11 @@ h2 {
   color: greenyellow;
   font-weight: 700;
   font-family: 'Times New Roman', Times, serif;
+  
 }
 
 #user-detail-intro {
-  margin-top: 20px;
+  margin-top: 30px;
 
 }
 
@@ -291,7 +208,6 @@ h3 {
 
 .about-img img {
   width: 100vw;
-  /* Add by me */
   height: 100%;
   width: 60%;
   margin-left: 30%;
@@ -310,7 +226,7 @@ h3 {
 
 
 #heading {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -380,7 +296,7 @@ h3 {
 
 .project-card img {
   padding: 20px;
-  width: 400px;
+  width: 700px;
   height: 400px;
   transition: .5s ease;
 }
@@ -402,7 +318,7 @@ h3 {
 .git_statics {
   margin: auto;
   height: auto;
-  width: 70vw;
+  width: 90vw;
   padding: 30px;
 }
 
@@ -427,7 +343,7 @@ h3 {
   margin: 30px;
   display: grid;
   grid-template-rows: 1fr;
-  gap: 20px;
+  gap: 40px;
   align-items: center;
   justify-content: center;
 }
@@ -455,7 +371,10 @@ textarea {
   display: block;
 }
 
-
+#contact-not-git{
+  color: white;
+  text-align: center;
+}
 
 
 
@@ -489,7 +408,9 @@ footer h3 {
 
 .copyright {
   padding: 20px;
-  background: rgb(19, 164, 247);
+  margin-top: 20px;
+  width: 100%;
+  background: rgb(7, 150, 244);
   text-align: center;
   color: #fff;
 }
@@ -563,10 +484,6 @@ footer h3 {
   .section {
     flex-direction: column;
   }
-
-  /* .about-content div{
-  margin-top: 100rem;
-} */
 
   .home-content h3 {
     font-size: 2.6rem;

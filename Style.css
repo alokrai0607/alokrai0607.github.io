@@ -229,13 +229,13 @@ h3 {
 
 
 #heading {
-  margin-top: 50px;
+  margin-top: 150px;
   text-align: center;
 }
 
 
 #skills {
-  padding: 100px;
+  padding: 160px;
   height: auto;
   display: flex;
   justify-content: center;

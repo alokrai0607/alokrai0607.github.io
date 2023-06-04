@@ -5,7 +5,6 @@ function myfunction(){
 //navbar sticky
 window.onscroll = function() {myFunction()};
 
-
 var mytopnav = document.getElementById("mytopnav");
 
 var sticky = mytopnav.offsetTop;

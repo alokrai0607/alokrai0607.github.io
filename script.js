@@ -45,7 +45,7 @@ GitHubCalendar(".calendar", "alokrai0607");
 GitHubCalendar(".calendar", "alokrai0607", { responsive: true });
 
 function resume(){
-window.open("https://drive.google.com/file/d/1Qdwd40KmkByDwamw2tOvhtXyXZC9T2hE/view?usp=sharing", "_blank");
+window.open("https://drive.google.com/file/d/1opUM57d_nAP79bhtp4pt9JmgjPraEWan/view?usp=sharing", "_blank");
 }
 
 

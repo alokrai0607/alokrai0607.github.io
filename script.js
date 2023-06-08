@@ -10,7 +10,6 @@ function sub(){
     message: "Hello !",
     },"h8s4g7h4yAgMruUze");   
 }
-
 //navbar sticky
 window.onscroll = function() {myFunction()};
 

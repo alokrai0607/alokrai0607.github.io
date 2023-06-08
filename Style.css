@@ -419,7 +419,6 @@ footer h3 {
   color: #22cf91;
 }
 
-
 /*************** BreakPoint ********************/
 
 @media (max-width:1200px) {
@@ -522,6 +521,9 @@ footer h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .project-card{
+    grid-template-columns: repeat(2, 1fr);
+  }
 
 }
 
@@ -529,6 +531,7 @@ footer h3 {
   .portfolio-container {
     grid-template-columns: 1fr;
   }
+
 }
 
 @media (max-width: 450px) {

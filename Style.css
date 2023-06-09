@@ -405,7 +405,6 @@ footer h3 {
   width: 40px;
   height: 40px;
 }
-
 .copyright {
   padding: 20px;
   margin-top: 20px;
@@ -414,13 +413,11 @@ footer h3 {
   text-align: center;
   color: #fff;
 }
-
 .copyright a {
   color: #22cf91;
 }
 
 /*************** BreakPoint ********************/
-
 @media (max-width:1200px) {
   html {
     font-size: 55%;

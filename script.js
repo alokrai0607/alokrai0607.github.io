@@ -1,6 +1,7 @@
 function myfunction(){
   document.getElementById("mytopnav").classList.toggle("responsive");
 }
+
 function sub(){
   event.preventDefault()
   alert("hello")
@@ -9,6 +10,7 @@ function sub(){
     message: "Hello !",
     },"h8s4g7h4yAgMruUze");   
 }
+
 //navbar sticky
 window.onscroll = function() {myFunction()};
 

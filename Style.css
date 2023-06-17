@@ -527,6 +527,10 @@ footer h3 {
     grid-template-columns: 1fr;
   }
 
+  .project-card{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 }
 
 @media (max-width: 450px) {

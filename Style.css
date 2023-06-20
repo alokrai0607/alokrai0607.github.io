@@ -6,15 +6,11 @@
   .topnav a:not(:first-child) {
     display: none;
   }
-
   .topnav a.icon {
     float: right;
     display: block;
-
   }
-
   .spar {
-
     height: 30%;
     width: 100%;
   }

@@ -15,7 +15,6 @@ function sub(){
 window.onscroll = function() {myFunction()};
 var mytopnav = document.getElementById("mytopnav");
 var sticky = mytopnav.offsetTop;
-
 function myFunction() {
 if (window.pageYOffset >= sticky) {
   mytopnav.classList.add("sticky")

@@ -3,7 +3,6 @@ const header = document.querySelector("header");
 const toggle = document.querySelector("#toggle");
 const sunIcon = document.querySelector(".toggle .bxs-sun");
 const moonIcon = document.querySelector(".toggle .bx-moon");
-
 toggle.addEventListener("change", () => {
     let h1 = document.getElementsByTagName("h1");
     let h2 = document.getElementsByTagName("h2");

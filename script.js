@@ -10,7 +10,6 @@ function sub(){
     message: "Hello !",
     },"h8s4g7h4yAgMruUze");   
 }
-
 GitHubCalendar(".calendar", "alokrai0607");
 // or enable responsive functionality
 GitHubCalendar(".calendar", "alokrai0607", { responsive: true });

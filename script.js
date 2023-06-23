@@ -1,7 +1,6 @@
 function myfunction(){
   document.getElementById("mytopnav").classList.toggle("responsive");
 }
-
 function sub(){
   event.preventDefault()
   alert("hello")

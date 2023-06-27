@@ -337,21 +337,18 @@ h3 {
   margin: 2px auto; 
   border-radius: 10px;
 }
-
 .about h3 {
   text-align: left;
   line-height: 1.2;
 }
-
 /**********************************************Skills**********************************************************/
 
 #heading {
   margin-top: 130px;
   text-align: center;
 }
-
 #skills {
-  padding: 160px;
+  padding: 150px;
   height: auto;
   display: flex;
   justify-content: center;

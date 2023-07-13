@@ -12,12 +12,20 @@ if (navClose) {
         navMenu.classList.remove('show-menu');
     })
 }
+
+
+
+
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll(".nav_link");
 function linkAction() {
     const navMenu = document.getElementById("nav-menu");
     navMenu.classList.remove('show-menu');
 }
+
+
+
+
 navLink.forEach(n => n.addEventListener('click', linkAction));
 /*==================== SKILLS ====================*/
 const skillsContent = document.getElementsByClassName("skills_content");
@@ -35,6 +43,10 @@ function toggleSkills() {
 skillsHeader.forEach((element) => {
     element.addEventListener('click', toggleSkills);
 })
+
+
+
+
 /*==================== QUALIFICATION ====================*/
 const tabs = document.querySelectorAll('[data-target]')
 tabContents = document.querySelectorAll('[data-content]')
@@ -53,6 +65,11 @@ tabs.forEach(tab => {
         tab.classList.add('qualification_active')
     })
 })
+
+
+
+
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -71,6 +88,11 @@ function scrollActive() {
         }
     })
 }
+
+
+
+
+
 window.addEventListener('scroll', scrollActive)
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader() {
@@ -79,6 +101,11 @@ function scrollHeader() {
     if (this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+
+
+
+
 /*==================== SHOW SCROLL TOP ====================*/
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
@@ -86,6 +113,11 @@ function scrollUp() {
     if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
+
+
+
+
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'

@@ -7,7 +7,6 @@
     /* Your primary color */
     --hue-color: 0;
     /* purple: 250, red:0, olive:50, green:140, blue:230 */
-
     /* HSL color mode*/
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -47,7 +46,6 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
-
     /* ========== Z-Index ========== */
     --z-tooltip: 10;
     --z-fixed: 100;

@@ -7,6 +7,7 @@
     /* Your primary color */
     --hue-color: 0;
     /* purple: 250, red:0, olive:50, green:140, blue:230 */
+
     /* HSL color mode*/
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -46,6 +47,7 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
+
     /* ========== Z-Index ========== */
     --z-tooltip: 10;
     --z-fixed: 100;
@@ -401,7 +403,7 @@ img {
 }
 
 .home_blob-img {
-    width: 150px;
+    width: 175px;
     transition: 0.5s;
 }
 
@@ -434,9 +436,9 @@ img {
 }
 
 .home_scroll {
-    /* display: none; */
     padding: 0 1rem 0;
-    margin-top: var(--mb-0-5);
+    margin: auto;
+    margin-top: var(--mb-0-75);
 }
 
 .home_scroll-button {
@@ -688,7 +690,7 @@ img {
 }
 
 .portfolio_content {
-    padding: 3rem;
+    padding: 3rem 2rem;
 }
 
 .portfolio_img {
@@ -739,11 +741,6 @@ img {
 
 .swiper-button-next:hover {
     transform: translateX(0.5rem);
-}
-
-.swiper-portfolio-icon {
-    font-size: 2rem;
-    color: var(--first-color);
 }
 
 .swiper-button-prev {
@@ -1037,7 +1034,6 @@ img {
 }
 
 @media screen and (min-width: 767px) {
-
     #resume-button-1 {
         margin-right: 0.75rem;
         border: 1px solid var(--first-color);

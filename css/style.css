@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+
 :root {
     --header-height: 3rem;
 
@@ -54,6 +55,8 @@
     --z-modal: 1000;
 }
 
+
+
 /* ========== Font size for large devices ========== */
 @media screen and (min-width: 968px) {
     :root {
@@ -66,6 +69,9 @@
         --smaller-font-size: 0.813rem;
     }
 }
+
+
+
 
 /* ========== Variable dark theme ========== */
 body.dark-theme {
@@ -117,7 +123,6 @@ body {
     background-color: var(--body-color);
     color: var(--text-color);
 }
-
 h1,
 h2,
 h3,
@@ -401,12 +406,10 @@ img {
     width: 200px;
     fill: var(--first-color);
 }
-
 .home_blob-img {
     width: 175px;
     transition: 0.5s;
 }
-
 .home_blob-img:hover {
     transform-origin: 50% 50%;
     transform: scale(1.05);

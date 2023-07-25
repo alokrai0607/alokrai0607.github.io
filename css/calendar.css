@@ -6,6 +6,7 @@
     --color-calendar-graph-day-L4-bg: #4f2727;
 }
 
+
 rect.ContributionCalendar-day[data-level='0'] {
     fill: var(--color-calendar-graph-day-bg);
 }

@@ -8,7 +8,6 @@
 rect.ContributionCalendar-day[data-level='0'] {
     fill: var(--color-calendar-graph-day-bg);
 }
-
 rect.ContributionCalendar-day[data-level='1'] {
     fill: var(--color-calendar-graph-day-L1-bg);
 }

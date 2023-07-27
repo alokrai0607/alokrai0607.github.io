@@ -401,7 +401,7 @@ img {
 
 .home_blob {
     width: 200px;
-    fill: var(--first-color);
+    fill: grey;
 }
 .home_blob-img {
     width: 175px;

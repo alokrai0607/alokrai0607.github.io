@@ -145,9 +145,11 @@ img {
 }
 
 /* =========== Reusable Css Classes ========== */
+
 .section {
     padding: 2rem 0 2rem;
 }
+
 
 .section_title {
     font-size: var(--h1-font-size);

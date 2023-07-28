@@ -14,8 +14,6 @@ if (navClose) {
     })
 }
 
-  
-
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll(".nav_link");
 
@@ -24,8 +22,6 @@ function linkAction() {
     navMenu.classList.remove('show-menu');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
-
-
 
 /*==================== SKILLS ====================*/
 const skillsContent = document.getElementsByClassName("skills_content");
@@ -45,8 +41,6 @@ function toggleSkills() {
 skillsHeader.forEach((element) => {
     element.addEventListener('click', toggleSkills);
 })
-
-
 
 /*==================== QUALIFICATION ====================*/
 const tabs = document.querySelectorAll('[data-target]')
@@ -90,8 +84,6 @@ function scrollActive() {
 }
 window.addEventListener('scroll', scrollActive)
 
-
-
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader() {
     const nav = document.getElementById('header')
@@ -100,8 +92,6 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader)
 
-
-
 /*==================== SHOW SCROLL TOP ====================*/
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
@@ -109,8 +99,6 @@ function scrollUp() {
     if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
-
-
 
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button')

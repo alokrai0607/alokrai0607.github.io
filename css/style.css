@@ -171,6 +171,7 @@ img {
     transition: 0.3s;
 }
 
+
 .section_subtitle:hover {
     color: var(--text-color);
     transform: translateY(-0.25rem);
@@ -181,6 +182,8 @@ img {
     text-align: center;
     padding: 0 2rem 0;
 }
+
+
 
 .hr_break_line {
     width: 80%;

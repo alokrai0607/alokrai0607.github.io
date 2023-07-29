@@ -25,6 +25,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /*==================== SKILLS ====================*/
 const skillsContent = document.getElementsByClassName("skills_content");
+
 skillsHeader = document.querySelectorAll(".skills_header");
 
 function toggleSkills() {
@@ -48,6 +49,7 @@ tabContents = document.querySelectorAll('[data-content]')
 
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
+
         const target = document.querySelector(tab.dataset.target)
 
         tabContents.forEach(tabContent => {
@@ -72,7 +74,9 @@ function scrollActive() {
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight
+
         const sectionTop = current.offsetTop - 50;
+
         sectionId = current.getAttribute('id')
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -88,6 +92,7 @@ window.addEventListener('scroll', scrollActive)
 function scrollHeader() {
     const nav = document.getElementById('header')
     // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+
     if (this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
@@ -111,6 +116,7 @@ const selectedIcon = localStorage.getItem('selected-icon')
 
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
 
@@ -125,9 +131,11 @@ if (selectedTheme) {
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
+    
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
+
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())

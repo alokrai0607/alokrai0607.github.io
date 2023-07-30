@@ -198,7 +198,6 @@ img {
     display: flex;
     justify-content: left;
 }
-
 .button {
     display: inline-block;
     background-color: var(--first-color);
@@ -210,7 +209,6 @@ img {
     transition: 0.5s;
     margin-right: var(--mb-0-75);
 }
-
 #resume-link-2 {
     font-size: var(--normal-font-size);
     color: #fff;

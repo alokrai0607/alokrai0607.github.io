@@ -512,6 +512,7 @@ img {
 }
 
 .about_info-title,
+
 .about_info-name {
     display: block;
     text-align: center;
@@ -598,9 +599,11 @@ img {
 
 /* ====== SKILLS ====== */
 .skills_container {
+
     padding: 2rem 1.5rem 0;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.1) 0px 5px 25px 0px;
+
 }
 
 .skills_content {
@@ -608,10 +611,12 @@ img {
 }
 
 .skills_header {
+
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-2-5);
     cursor: pointer;
+    
 }
 
 .skills_icon,

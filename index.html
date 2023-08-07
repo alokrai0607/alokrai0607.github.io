@@ -695,16 +695,12 @@
                     <div class="contact_inputs grid">
                         <div class="contact_content">
                             <label for="name" class="contact_label">Name</label>
-                            <input name="name" type="text" class="contact_input">
+                            <input name="name" type="text" id="name" class="contact_input">
                         </div>
                         <div class="contact_content">
                             <label for="email" class="contact_label">Email</label>
-                            <input name="email" type="email" class="contact_input" required>
+                            <input name="email" id="email"type="email" class="contact_input" required>
                         </div>
-                    </div>
-                    <div class="contact_content">
-                        <label for="project" class="contact_label">Project</label>
-                        <input name="project" type="text" class="contact_input">
                     </div>
                     <div class="contact_content">
                         <label for="message" class="contact_label">Message</label>
@@ -716,10 +712,20 @@
                         </button>
                     </div>
                 </form>
+
+                <!DOCTYPE html>
+<html>
+<head>
+  <title>Email.js Example</title>
+</head>
+<body>
+
+</body>
+</html>
+
             </div>
         </section>
         <hr class="hr_break_line">
-
 
     </main>
     <!-- ========== FOOTER ========== -->
@@ -815,6 +821,33 @@
             tooltips: true,
         });
     </script>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("h8s4g7h4yAgMruUze");
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // This is where you define your email template
+      var templateParams = {
+        from_name: document.getElementById('name').value,
+        from_email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+      };
+
+      emailjs.send('service_qanxv6w', 'template_5g7ruee', templateParams)
+        .then(function(response) {
+          console.log('Email sent successfully:', response);
+          alert('Email sent successfully!');
+        }, function(error) {
+          console.log('Email send error:', error);
+          alert('Error sending email.');
+        });
+    });
+  })();
+</script>
 
     <!-- ==================== SCROLL REVEAL ANIMATION ==================== -->
     <script>

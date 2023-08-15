@@ -130,6 +130,7 @@ if (selectedTheme) {
     themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
 }
 
+
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
     

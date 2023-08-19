@@ -129,6 +129,7 @@ rect.ContributionCalendar-day[data-level='4'] {
     text-decoration: none;
 }
 
+
 .contrib-footer {
     font-size: 11px;
     padding: 0 10px 12px;
@@ -137,6 +138,7 @@ rect.ContributionCalendar-day[data-level='4'] {
     box-sizing: border-box;
     height: 26px;
 }
+
 
 .left.text-muted {
     float: left;

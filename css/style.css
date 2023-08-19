@@ -1180,10 +1180,6 @@ img {
     .footer_container {
         padding: 0;
     }
-
-
-
-    
     .home_blob {
         width: 350px;
     }
@@ -1207,11 +1203,13 @@ img {
     .container {
         max-width: 80%;
     }
+    
 
     .about_container {
         width: 80%;
         display: flex;
     }
+
 
     .about_img {
         flex-basis: 30%;

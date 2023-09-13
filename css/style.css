@@ -952,7 +952,6 @@ img {
     background-color: var(--text-color-light);
 }
 
-
 /* ============ MEDIA QUERIES ============ */
 /* ====== For small devices ====== */
 @media screen and (max-width:350px) {
@@ -1203,8 +1202,6 @@ img {
     .container {
         max-width: 80%;
     }
-    
-
     .about_container {
         width: 80%;
         display: flex;

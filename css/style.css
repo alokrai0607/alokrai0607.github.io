@@ -910,6 +910,7 @@ img {
     color: #fff;
 }
 
+
 /* ====== SCROLL UP ====== */
 .scrollup {
     position: fixed;
@@ -983,6 +984,7 @@ img {
     .qualification_data {
         gap: 0.5rem;
     }
+
 }
 
 /* ====== For medium devices ====== */
@@ -1011,6 +1013,7 @@ img {
 
     .about_container,
     .skills_container,
+    
     .portfolio_content,
     .contact_container {
         grid-template-columns: repeat(2, 1fr);

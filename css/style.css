@@ -220,6 +220,7 @@ img {
 .button_icon {
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
+  
   transition: 0.3s;
 }
 

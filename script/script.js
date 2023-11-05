@@ -85,6 +85,7 @@ function scrollActive() {
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
         } else {
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
+
         }
     })
 }
@@ -98,6 +99,9 @@ function scrollHeader() {
     if (this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+
+
 
 /*==================== SHOW SCROLL TOP ====================*/
 function scrollUp() {
@@ -122,6 +126,8 @@ const selectedIcon = localStorage.getItem('selected-icon')
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+
+
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {

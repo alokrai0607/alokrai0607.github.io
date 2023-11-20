@@ -254,16 +254,13 @@ img {
   display: grid;
   gap: 1rem;
 }
-
-
 .header {
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
-  
+  background-color: var(--body-color); 
 }
 
 /* =========== NAVBAR ========== */
@@ -274,7 +271,6 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-
 .nav_logo {
   color: var(--title-color);
   font-size: var(--h3-font-size);
@@ -453,7 +449,6 @@ img {
   transform: translateY(0.5rem);
   text-shadow: 0px -30px 3px var(--text-color-light);
 }
-
 .home_scroll-mouse {
   font-size: 2rem;
 }
@@ -464,11 +459,9 @@ img {
   font-weight: var(--font-medium);
   margin-right: var(--mb-0-25);
 }
-
 .home_scroll-arrow {
   font-size: 1.25rem;
 }
-
 /* ====== ABOUT ====== */
 .about_img {
   width: 300px;
@@ -488,19 +481,16 @@ img {
   justify-content: space-evenly;
   margin-bottom: var(--mb-2-5);
 }
-
 .about_info > div {
   padding: var(--mb-0-5) var(--mb-1-5) var(--mb-0-5);
   border: 1px solid transparent;
   border-radius: 0.75rem;
   transition: 0.5s;
 }
-
 .about_info > div:hover {
   border: 1px solid var(--first-color);
   cursor: pointer;
 }
-
 .about_info-title {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);

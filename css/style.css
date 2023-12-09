@@ -397,7 +397,6 @@ img {
   transform: translateX(0.5rem);
   text-shadow: -25px 20px 3px var(--text-color-light);
 }
-
 .home_blob {
   width: 200px;
   fill: grey;

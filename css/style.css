@@ -18,7 +18,7 @@
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
-  --container-color: #fff;
+  --container-color: #f7eded;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
@@ -241,8 +241,6 @@ img {
   color: #fff;
 }
 
-
-
 /* =========== Layout ========== */
 .container {
   max-width: 768px;
@@ -260,7 +258,7 @@ img {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color); 
+  background-color: var(--body-color);
 }
 
 /* =========== NAVBAR ========== */

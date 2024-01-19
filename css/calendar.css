@@ -5,12 +5,15 @@
     --color-calendar-graph-day-L3-bg: #723030;
     --color-calendar-graph-day-L4-bg: #4f2727;
 }
+
 rect.ContributionCalendar-day[data-level='0'] {
     fill: var(--color-calendar-graph-day-bg);
 }
+
 rect.ContributionCalendar-day[data-level='1'] {
     fill: var(--color-calendar-graph-day-L1-bg);
 }
+
 rect.ContributionCalendar-day[data-level='2'] {
     fill: var(--color-calendar-graph-day-L2-bg);
 }
@@ -223,7 +226,7 @@ text.ContributionCalendar-label {
     .text-muted {
         font-size: 7px;
     }
-    
+
     .float-right {
         font-size: 8px;
     }

@@ -310,7 +310,6 @@ button.swiper-pagination-bullet {
   -webkit-appearance: none;
   appearance: none;
 }
-
 .swiper-pagination-clickable .swiper-pagination-bullet {
   cursor: pointer;
 }

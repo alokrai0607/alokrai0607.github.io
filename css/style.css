@@ -117,6 +117,7 @@ body {
   
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
+  
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);

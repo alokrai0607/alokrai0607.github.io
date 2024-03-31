@@ -22,6 +22,8 @@ const navLink = document.querySelectorAll(".nav_link");
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
   navMenu.classList.remove("show-menu");
+  //   Login to the Bito extension to get free AI code completions…
+  // it could write 50% of your code…
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 

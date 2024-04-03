@@ -109,8 +109,9 @@ rect.ContributionCalendar-day[data-level="4"] {
   line-height: 1.3em;
   font-size: 24px;
   display: block;
+
   color: rgb(224, 87, 87);
-  color: rgb(76, 224, 88);
+  color: rgb(76, 224, 90);
 }
 
 .calendar img.spinner {
@@ -122,7 +123,7 @@ rect.ContributionCalendar-day[data-level="4"] {
 .monospace {
   text-align: center;
 
-  color: #000;
+  color: #3e1313;
   font-family: monospace;
 }
 
@@ -143,7 +144,7 @@ rect.ContributionCalendar-day[data-level="4"] {
 .left.text-muted {
   float: left;
   margin-left: 9px;
-  color: #e43737;
+  color: #b2734a;
 }
 
 .left.text-muted a {

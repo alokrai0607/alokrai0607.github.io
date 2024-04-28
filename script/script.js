@@ -49,6 +49,7 @@ skillsHeader.forEach((element) => {
 
 /*==================== QUALIFICATION ====================*/
 const tabs = document.querySelectorAll("[data-target]");
+
 tabContents = document.querySelectorAll("[data-content]");
 
 tabs.forEach((tab) => {

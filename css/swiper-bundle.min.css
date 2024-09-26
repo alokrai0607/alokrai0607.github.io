@@ -7,11 +7,9 @@
   font-weight: 400;
   font-style: normal;
 }
-
 :root {
   --swiper-theme-color: #e05757;
 }
-
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
@@ -21,7 +19,6 @@
   padding: 0;
   z-index: 1;
 }
-
 .swiper-container-vertical > .swiper-wrapper {
   flex-direction: column;
 }
